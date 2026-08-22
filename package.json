@@ -1,0 +1,55 @@
+{
+  "name": "central-bank-of-kenya-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official Central Bank of Kenya (Kenya) daily exchange rates — 21 currencies vs KES, history since 2024. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "cbke",
+    "central",
+    "bank",
+    "of",
+    "kenya",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "kes",
+    "central-bank",
+    "official-rates",
+    "kenya",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/cbke/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/central-bank-of-kenya-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/central-bank-of-kenya-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
