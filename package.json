@@ -1,6 +1,6 @@
 {
   "name": "central-bank-of-kenya-exchange-rate",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Official Central Bank of Kenya (Kenya) daily exchange rates — 21 currencies vs KES, history since 2024. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "cbke",
