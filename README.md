@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/central-bank-of-kenya-exchange-rate.svg)](https://github.com/AllRates-Today/central-bank-of-kenya-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/central-bank-of-kenya-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/KES today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbke%3Fsource%3DUSD%26target%3DKES&query=%24.rate&label=USD%2FKES%20published%20by%20Central%20Bank%20of%20Kenya&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbke/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbke%3Fsource%3DUSD%26target%3DKES&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbke/)
 
 **Official Central Bank of Kenya (Kenya) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Kenya itself prints, every business day.**
 
@@ -32,6 +34,40 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Kenya table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Central Bank of Kenya — 21 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | KES | reference | 35.38 |
+| AUD | KES | reference | 90.43 |
+| BIF | KES | reference | 0.043308792 |
+| CAD | KES | reference | 91.12 |
+| CHF | KES | reference | 155.86 |
+| CNY | KES | reference | 19.38 |
+| DKK | KES | reference | 19.44 |
+| EUR | KES | reference | 145.37 |
+| GBP | KES | reference | 171.62 |
+| HKD | KES | reference | 16.55 |
+| INR | KES | reference | 1.34 |
+| JPY | KES | reference | 0.8215 |
+| NOK | KES | reference | 13.56 |
+| RWF | KES | reference | 0.088183422 |
+| SAR | KES | reference | 34.61 |
+| SEK | KES | reference | 12.97 |
+| SGD | KES | reference | 101.51 |
+| TZS | KES | reference | 0.049333991 |
+| UGX | KES | reference | 0.032092426 |
+| USD | KES | reference | 129.94 |
+| ZAR | KES | reference | 7.8 |
+
+Source: [Official rates published by CBKE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbke/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
