@@ -40,31 +40,31 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Central Bank of Kenya table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-08** by Central Bank of Kenya — 21 rates. Updated 2026-10-08.
+Published **2026-10-09** by Central Bank of Kenya — 21 rates. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | KES | reference | 35.38 |
-| AUD | KES | reference | 90.43 |
-| BIF | KES | reference | 0.043308792 |
-| CAD | KES | reference | 91.12 |
-| CHF | KES | reference | 155.86 |
-| CNY | KES | reference | 19.38 |
-| DKK | KES | reference | 19.44 |
-| EUR | KES | reference | 145.37 |
-| GBP | KES | reference | 171.62 |
+| AED | KES | reference | 35.37 |
+| AUD | KES | reference | 90.71 |
+| BIF | KES | reference | 0.043383948 |
+| CAD | KES | reference | 91.41 |
+| CHF | KES | reference | 156.45 |
+| CNY | KES | reference | 19.4 |
+| DKK | KES | reference | 19.52 |
+| EUR | KES | reference | 145.92 |
+| GBP | KES | reference | 172.04 |
 | HKD | KES | reference | 16.55 |
 | INR | KES | reference | 1.34 |
-| JPY | KES | reference | 0.8215 |
-| NOK | KES | reference | 13.56 |
-| RWF | KES | reference | 0.088183422 |
-| SAR | KES | reference | 34.61 |
-| SEK | KES | reference | 12.97 |
-| SGD | KES | reference | 101.51 |
-| TZS | KES | reference | 0.049333991 |
-| UGX | KES | reference | 0.032092426 |
-| USD | KES | reference | 129.94 |
-| ZAR | KES | reference | 7.8 |
+| JPY | KES | reference | 0.8218 |
+| NOK | KES | reference | 13.6 |
+| RWF | KES | reference | 0.088261253 |
+| SAR | KES | reference | 34.6 |
+| SEK | KES | reference | 13.05 |
+| SGD | KES | reference | 101.56 |
+| TZS | KES | reference | 0.049140049 |
+| UGX | KES | reference | 0.031776295 |
+| USD | KES | reference | 129.91 |
+| ZAR | KES | reference | 7.86 |
 
 Source: [Official rates published by CBKE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbke/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
