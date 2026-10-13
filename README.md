@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Central Bank of Kenya — 21 rates. Updated 2026-10-12.
+Published **2026-10-13** by Central Bank of Kenya — 21 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | KES | reference | 35.32 |
-| AUD | KES | reference | 90.51 |
-| BIF | KES | reference | 0.043290043 |
-| CAD | KES | reference | 90.92 |
-| CHF | KES | reference | 156.13 |
+| AED | KES | reference | 35.31 |
+| AUD | KES | reference | 90.37 |
+| BIF | KES | reference | 0.043346337 |
+| CAD | KES | reference | 90.96 |
+| CHF | KES | reference | 155.7 |
 | CNY | KES | reference | 19.38 |
-| DKK | KES | reference | 19.44 |
-| EUR | KES | reference | 145.32 |
-| GBP | KES | reference | 171.67 |
-| HKD | KES | reference | 16.53 |
-| INR | KES | reference | 1.34 |
-| JPY | KES | reference | 0.8194 |
-| NOK | KES | reference | 13.54 |
-| RWF | KES | reference | 0.088028169 |
-| SAR | KES | reference | 34.54 |
-| SEK | KES | reference | 12.97 |
-| SGD | KES | reference | 101.28 |
-| TZS | KES | reference | 0.049164208 |
-| UGX | KES | reference | 0.032041012 |
-| USD | KES | reference | 129.75 |
+| DKK | KES | reference | 19.39 |
+| EUR | KES | reference | 145 |
+| GBP | KES | reference | 171.64 |
+| HKD | KES | reference | 16.52 |
+| INR | KES | reference | 1.35 |
+| JPY | KES | reference | 0.8177 |
+| NOK | KES | reference | 13.56 |
+| RWF | KES | reference | 0.087950748 |
+| SAR | KES | reference | 34.53 |
+| SEK | KES | reference | 12.94 |
+| SGD | KES | reference | 101.31 |
+| TZS | KES | reference | 0.049140049 |
+| UGX | KES | reference | 0.031220731 |
+| USD | KES | reference | 129.71 |
 | ZAR | KES | reference | 7.84 |
 
 Source: [Official rates published by CBKE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbke/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
