@@ -42,31 +42,31 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Central Bank of Kenya — 21 rates. Updated 2026-10-13.
+Published **2026-10-14** by Central Bank of Kenya — 21 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | KES | reference | 35.31 |
-| AUD | KES | reference | 90.37 |
-| BIF | KES | reference | 0.043346337 |
-| CAD | KES | reference | 90.96 |
-| CHF | KES | reference | 155.7 |
+| AED | KES | reference | 35.33 |
+| AUD | KES | reference | 90.6 |
+| BIF | KES | reference | 0.043290043 |
+| CAD | KES | reference | 91.23 |
+| CHF | KES | reference | 155.9 |
 | CNY | KES | reference | 19.38 |
-| DKK | KES | reference | 19.39 |
-| EUR | KES | reference | 145 |
-| GBP | KES | reference | 171.64 |
-| HKD | KES | reference | 16.52 |
-| INR | KES | reference | 1.35 |
-| JPY | KES | reference | 0.8177 |
-| NOK | KES | reference | 13.56 |
-| RWF | KES | reference | 0.087950748 |
-| SAR | KES | reference | 34.53 |
-| SEK | KES | reference | 12.94 |
-| SGD | KES | reference | 101.31 |
-| TZS | KES | reference | 0.049140049 |
-| UGX | KES | reference | 0.031220731 |
-| USD | KES | reference | 129.71 |
-| ZAR | KES | reference | 7.84 |
+| DKK | KES | reference | 19.43 |
+| EUR | KES | reference | 145.29 |
+| GBP | KES | reference | 171.92 |
+| HKD | KES | reference | 16.53 |
+| INR | KES | reference | 1.36 |
+| JPY | KES | reference | 0.8195 |
+| NOK | KES | reference | 13.62 |
+| RWF | KES | reference | 0.088028169 |
+| SAR | KES | reference | 34.55 |
+| SEK | KES | reference | 13.01 |
+| SGD | KES | reference | 101.4 |
+| TZS | KES | reference | 0.049358342 |
+| UGX | KES | reference | 0.031426776 |
+| USD | KES | reference | 129.79 |
+| ZAR | KES | reference | 7.86 |
 
 Source: [Official rates published by CBKE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbke/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -123,10 +123,10 @@ const pair = await getRate('USD', 'KES', { apiKey: 'art_live_...' });
 {
   bank: 'cbke',
   name: 'Central Bank of Kenya',
-  rate_date: '2026-10-12',   // Central Bank of Kenya's own publication date
+  rate_date: '2026-10-14',   // Central Bank of Kenya's own publication date
   source: 'USD',
   target: 'KES',
-  rate: 129.75,
+  rate: 129.79,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -151,9 +151,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbke',
   name: 'Central Bank of Kenya',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-14',
   rates: [
-    { "base": "USD", "quote": "KES", "type": "reference", "value": 129.75 },
+    { "base": "USD", "quote": "KES", "type": "reference", "value": 129.79 },
     // … the rest of the published table (21 currencies vs KES)
   ],
   disclaimer: '…'
@@ -193,7 +193,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'central-bank-of-kenya-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'KES', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'KES', from: '2026-01-01', to: '2026-10-14' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -206,11 +206,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'KES',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-14',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 129.75, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-14', rate: 129.79, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -329,9 +329,9 @@ getRate('USD', 'KES', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbke.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/cbke.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbke/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/cbke/latest.json`
 
 ## 🔗 Links
 
