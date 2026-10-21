@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/cbke').th
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,31 +47,31 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Central Bank of Kenya — 21 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Central Bank of Kenya — 21 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | KES | reference | 35.37 |
-| AUD | KES | reference | 90.57 |
-| BIF | KES | reference | 0.043290043 |
-| CAD | KES | reference | 92.05 |
-| CHF | KES | reference | 157.56 |
-| CNY | KES | reference | 19.44 |
-| DKK | KES | reference | 19.5 |
-| EUR | KES | reference | 145.79 |
-| GBP | KES | reference | 173.14 |
+| AUD | KES | reference | 91.14 |
+| BIF | KES | reference | 0.043327556 |
+| CAD | KES | reference | 92.38 |
+| CHF | KES | reference | 157.36 |
+| CNY | KES | reference | 19.45 |
+| DKK | KES | reference | 19.51 |
+| EUR | KES | reference | 145.82 |
+| GBP | KES | reference | 173.76 |
 | HKD | KES | reference | 16.55 |
 | INR | KES | reference | 1.37 |
-| JPY | KES | reference | 0.8216 |
-| NOK | KES | reference | 13.77 |
-| RWF | KES | reference | 0.087950748 |
-| SAR | KES | reference | 34.62 |
+| JPY | KES | reference | 0.8214 |
+| NOK | KES | reference | 13.81 |
+| RWF | KES | reference | 0.088105727 |
+| SAR | KES | reference | 34.63 |
 | SEK | KES | reference | 13.1 |
-| SGD | KES | reference | 101.54 |
-| TZS | KES | reference | 0.049140049 |
-| UGX | KES | reference | 0.031279324 |
+| SGD | KES | reference | 101.67 |
+| TZS | KES | reference | 0.049043649 |
+| UGX | KES | reference | 0.031084862 |
 | USD | KES | reference | 129.92 |
-| ZAR | KES | reference | 7.89 |
+| ZAR | KES | reference | 7.91 |
 
 </details>
 
