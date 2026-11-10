@@ -32,31 +32,31 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-09 by Central Bank of Kenya — 21 rates. Updated 2026-11-09.</summary>
+<summary>Table as text: published 2026-11-10 by Central Bank of Kenya — 21 rates. Updated 2026-11-10.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | KES | reference | 35.38 |
-| AUD | KES | reference | 89.36 |
-| BIF | KES | reference | 0.043308792 |
-| CAD | KES | reference | 92.14 |
-| CHF | KES | reference | 158.53 |
-| CNY | KES | reference | 19.46 |
-| DKK | KES | reference | 19.38 |
-| EUR | KES | reference | 144.93 |
-| GBP | KES | reference | 173.75 |
+| AUD | KES | reference | 89.6 |
+| BIF | KES | reference | 0.043365134 |
+| CAD | KES | reference | 92.15 |
+| CHF | KES | reference | 158.69 |
+| CNY | KES | reference | 19.47 |
+| DKK | KES | reference | 19.46 |
+| EUR | KES | reference | 145.49 |
+| GBP | KES | reference | 174.33 |
 | HKD | KES | reference | 16.57 |
 | INR | KES | reference | 1.38 |
-| JPY | KES | reference | 0.8216 |
-| NOK | KES | reference | 13.77 |
-| RWF | KES | reference | 0.088028169 |
+| JPY | KES | reference | 0.8227 |
+| NOK | KES | reference | 13.81 |
+| RWF | KES | reference | 0.087873462 |
 | SAR | KES | reference | 34.62 |
-| SEK | KES | reference | 13.15 |
-| SGD | KES | reference | 101.35 |
-| TZS | KES | reference | 0.049188392 |
-| UGX | KES | reference | 0.031857279 |
+| SEK | KES | reference | 13.23 |
+| SGD | KES | reference | 101.53 |
+| TZS | KES | reference | 0.049140049 |
+| UGX | KES | reference | 0.031665611 |
 | USD | KES | reference | 129.96 |
-| ZAR | KES | reference | 7.86 |
+| ZAR | KES | reference | 7.9 |
 
 </details>
 
