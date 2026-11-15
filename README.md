@@ -31,7 +31,36 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-_The table is filled in by the daily workflow._
+<details>
+<summary>Table as text: published 2026-11-13 by Central Bank of Kenya — 21 rates. Updated 2026-11-15.</summary>
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | KES | reference | 35.38 |
+| AUD | KES | reference | 88.36 |
+| BIF | KES | reference | 0.043290043 |
+| CAD | KES | reference | 91.13 |
+| CHF | KES | reference | 155.56 |
+| CNY | KES | reference | 19.48 |
+| DKK | KES | reference | 19.22 |
+| EUR | KES | reference | 143.73 |
+| GBP | KES | reference | 171.91 |
+| HKD | KES | reference | 16.56 |
+| INR | KES | reference | 1.37 |
+| JPY | KES | reference | 0.8123 |
+| NOK | KES | reference | 13.58 |
+| RWF | KES | reference | 0.087873462 |
+| SAR | KES | reference | 34.62 |
+| SEK | KES | reference | 12.96 |
+| SGD | KES | reference | 101 |
+| TZS | KES | reference | 0.049019608 |
+| UGX | KES | reference | 0.031585597 |
+| USD | KES | reference | 129.96 |
+| ZAR | KES | reference | 7.75 |
+
+</details>
+
+Source: [Official rates published by CBKE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbke/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 📦 Installation
